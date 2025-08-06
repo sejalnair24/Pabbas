@@ -1,0 +1,88 @@
+<html>
+<head>
+  <style>
+    .col-flex {
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      height: 425;
+     justify-content: space-between;
+      align-items: center;
+      gap:10px
+    }
+
+    .left-image img {
+      height: 400;
+      width: 250 px;
+
+    }
+
+    .login-form {
+      padding: 30px;
+      height: 355;
+      border: 1px solid rgb(10, 10, 79);
+      background-color: antiquewhite;
+      border-radius: 20px;
+    }
+  </style>
+  <script>
+            function printLog(){
+              var nameNode=document.getElementById(`name`);
+               var icenameNode=document.getElementById(`icename`);
+              var icequaNode=document.getElementById(`icequa`);
+               var mobileNode=document.getElementById(`mobileno`);
+               var passwordNode=document.getElementById(`password`);
+               var name=nameNode.value;
+               var icename=icenameNode.value;
+               var icequa=icequaNode.value;
+               var mobileno=mobileNode.value;
+               var password=passwordNode.value;
+               console.log(`name ${name}`);
+                console.log(`icename ${icename}`);
+                  console.log(`icequa ${icequa}`);
+                console.log(`mobileno ${mobileno}`);
+                console.log(`password ${password}`);
+                  if(name=="sejal"&& password=="sejal123"){
+                  alert('Order Placed Successfully')
+                }else{
+                  alert('Not Available')
+                }
+               
+            }
+            </script>
+</head>
+<body style="background-color: white;">
+<center>
+<center> <h1>Ideal</h1></center> 
+
+  <div class="col-flex">
+    
+    <div class="left-image">
+   
+   <center> <img src="https://larochere.in/wp-content/uploads/2022/12/642101-1.jpg"height="800" width="250"/></center>  
+    </div>
+
+    <div class="login-form">
+  <p style="background-color: aquamarine;"  ><h2 >Login</h2>
+      <form>
+        
+        <input  type="text" placeholder="username" id="name"/><p style="line-height: 2;"></p><br>
+        
+         <input  type="text" placeholder="icecream name" id="icename"/><p style="line-height: 2;"></p><br>
+         <input type="number" placeholder="icecream quantity" id="icequa"/><p style="line-height: 2;"></p><br>
+
+          <input  type="tel"
+          pattern="pattern"[0-9]{3}-[0-9]{2}-[0-9]{3}
+          placeholder="contact no."id="mobileno"/><p style="line-height: 2;"></p><br>
+           
+            <input  type="password" placeholder="password"id="password"/><p style="line-height: 2;"></p><br>
+         
+      </form></p>
+       <button style="background-color: aquamarine;" onclick="printLog()">ORDER</button>
+       
+       </script>
+    </div>
+  </div>
+<center>
+</body>
+</html>
